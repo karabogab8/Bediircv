@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedirhan Karaboga - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="container">
+            <div class="header-left">
+                <div class="profile-avatar">
+                    <div class="avatar-glow"></div>
+                    <img src="images/Image.jpg" alt="Bedirhan Karaboga" class="avatar-img">
+                    <div class="avatar-overlay"></div>
+                </div>
+                <div class="header-info">
+                    <h1 class="header-name">Bedirhan Karaboga</h1>
+                    <p class="header-subtitle">Student & Service Worker</p>
+                </div>
+            </div>
+            <!-- Replaced separate page links with mode switcher buttons -->
+            <nav class="nav">
+                <button class="nav-link mode-btn active" data-mode="utplasering">Utplasering</button>
+                <button class="nav-link mode-btn" data-mode="deltidsjobb">Deltidsjobb</button>
+                <button class="nav-link mode-btn" data-mode="heltidsjobb">Heltidsjobb</button>
+                <button class="btn btn-primary" onclick="downloadCV()">
+                    <i data-lucide="download"></i>
+                    Last ned CV
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="floating-elements">
+            <div class="float-element float-1"></div>
+            <div class="float-element float-2"></div>
+            <div class="float-element float-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-image-large">
+                    <div class="profile-glow"></div>
+                    <img src="images/Image.jpg" alt="Bedirhan Karaboga" class="profile-img">
+                    <div class="upload-overlay">
+                        <i data-lucide="upload"></i>
+                    </div>
+                </div>
+                
+
+                
+                <h1 class="hero-title">
+                    Hei, jeg er <span class="gradient-text">Bedirhan</span>
+                </h1>
+                
+                <!-- Updated age to 18 and removed phone number -->
+                <p class="hero-subtitle">
+                    18 år gammel student | Elektro og datateknologi | Service worker
+                </p>
+                
+                <!-- Updated hero description to be dynamic based on mode -->
+                <p class="hero-description" id="hero-description">
+                    Jeg studerer på Elektro linjen ved Hamar Katedralskole og søker utplasering for å få praktisk erfaring.
+                </p>
+                
+<div class="contact-buttons">
+    <a href="mailto:bedirhankaraboga9@gmail.com" class="btn btn-outline">
+        <i data-lucide="mail"></i>
+        bedirhankaraboga9@gmail.com
+    </a>
+    <a href="https://www.google.com/maps?q=Elverum+liljevegen+04,+2409" 
+       target="_blank" 
+       class="btn btn-outline">
+        <i data-lucide="map-pin"></i>
+        Elverum liljevegen 04, 2409
+    </a>
+</div>
+
+                
+                <!-- Replaced page navigation with mode-specific content -->
+                <div class="mode-content" id="mode-content">
+                    <div class="mode-section utplasering-mode active">
+                        <h3>Søker Utplasering</h3>
+                        <p>Jeg søker utplasering innen elektro og datateknologi for å få praktisk erfaring og lære mer om fagfeltet. Jeg er motivert for å bidra til arbeidsplassen og utvikle mine tekniske ferdigheter.</p>
+                        <div class="mode-goals">
+                            <div class="goal-item">
+                                <i data-lucide="target"></i>
+                                <span>Få praktisk erfaring innen elektro</span>
+                            </div>
+                            <div class="goal-item">
+                                <i data-lucide="book-open"></i>
+                                <span>Lære fra erfarne fagfolk</span>
+                            </div>
+                            <div class="goal-item">
+                                <i data-lucide="users"></i>
+                                <span>Bidra til teamet</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mode-section deltidsjobb-mode">
+                        <h3>Søker Deltidsjobb</h3>
+                        <p>Med min erfaring fra servicenæringen søker jeg deltidsjobb ved siden av studiene. Jeg kan jobbe kveld og helger, og har god erfaring med kundeservice og teamarbeid.</p>
+                        <div class="mode-goals">
+                            <div class="goal-item">
+                                <i data-lucide="clock"></i>
+                                <span>Fleksible arbeidstider</span>
+                            </div>
+                            <div class="goal-item">
+                                <i data-lucide="heart"></i>
+                                <span>Utmerket kundeservice</span>
+                            </div>
+                            <div class="goal-item">
+                                <i data-lucide="trending-up"></i>
+                                <span>Utvikle arbeidserfaring</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mode-section heltidsjobb-mode">
+                        <h3>Søker Heltidsjobb</h3>
+                        <p>Jeg er klar for heltidsjobb og kan tilby dedikert innsats, pålitelighet og en positiv arbeidsinnstilling. Min erfaring fra restaurant- og servicenæringen gjør meg til en verdifull medarbeider.</p>
+                        <div class="mode-goals">
+                            <div class="goal-item">
+                                <i data-lucide="briefcase"></i>
+                                <span>Full dedikasjon til jobben</span>
+                            </div>
+                            <div class="goal-item">
+                                <i data-lucide="star"></i>
+                                <span>Høy arbeidsstandard</span>
+                            </div>
+                            <div class="goal-item">
+                                <i data-lucide="award"></i>
+                                <span>Langsiktig engasjement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="users"></i>
+                    Om Meg
+                </div>
+                <h2 class="section-title">Hvem Er Jeg?</h2>
+            </div>
+            
+            <div class="card">
+                <div class="card-content">
+                    <p>Hei! Jeg heter Bedirhan, er 18 år gammel og studerer for tiden på Elektro linjen ved Hamar Katedralskole. Jeg er på utkikk etter utplasering, deltidsjobb eller heltidsjobb ved siden av studiene, hvor jeg kan bruke mine ferdigheter og samtidig lære mer.</p>
+                    
+                    <p>Jeg har over ett års erfaring fra restaurant- og servicenæringen, hvor jeg har jobbet både som kokk og servitør. Jeg er ryddig, strukturert og engasjert, og jeg jobber godt både selvstendig og i team. Jeg har en positiv innstilling, håndterer stress på en god måte og er løsningsorientert.</p>
+                    
+                    <p>Som person er jeg sosial, lærevillig og tilpasningsdyktig, og jeg kommuniserer godt med kolleger og kunder. Jeg er en god lytter og tar til meg kritikk og tilbakemeldinger med et åpent sinn noe jeg mener er viktig for personlig og profesjonell utvikling.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="briefcase"></i>
+                    Arbeidserfaring
+                </div>
+                <h2 class="section-title">Mine Erfaringer</h2>
+                <p class="section-description">Over ett års erfaring fra restaurant- og servicenæringen</p>
+            </div>
+            
+            <div class="experience-grid">
+                <!-- Added OBS Marked experience -->
+                <div class="card experience-card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Butikkmedarbeider</h3>
+                            <p class="company">OBS Marked</p>
+                            <div class="job-date">
+                                <i data-lucide="calendar"></i>
+                                2025 - Nåværende
+                            </div>
+                        </div>
+                        <div class="badge badge-active">Aktiv</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Ansvar for kundebehandling, varepåfylling og orden i butikken. Bidrar til et hyggelig handlemiljø og yter god service til kunder. Har evne til rask tilpasning til ulike oppgaver og samarbeider godt med kollegaer.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Kundeservice</span>
+                            <span class="skill-tag">Varepåfylling</span>
+                            <span class="skill-tag">Teamarbeid</span>
+                            <span class="skill-tag">Butikkdrift</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Punktet Pub -->
+                <div class="card experience-card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Servitør</h3>
+                            <p class="company">Punktet Pub</p>
+                            <div class="job-date">
+                                <i data-lucide="calendar"></i>
+                                2025 - Nåværende
+                            </div>
+                        </div>
+                        <div class="badge badge-active">Aktiv</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Ansvar for både servering, bar og enkel kjøkkenhjelp. Sørger for et hyggelig miljø og god opplevelse for gjestene. Rask tilpasning til ulike oppgaver og samarbeider godt med kollegaer.</p>
+                        <div class="skills">
+                            <span class="skill-tag">Servering</span>
+                            <span class="skill-tag">Bar</span>
+                            <span class="skill-tag">Kjøkkenhjelp</span>
+                            <span class="skill-tag">Kundeservice</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lokket Spiseri -->
+                <div class="card experience-card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Kokk/Servitør</h3>
+                            <p class="company">Lokket Spiseri</p>
+                            <div class="job-date">
+                                <i data-lucide="calendar"></i>
+                                2023 - 2025
+                            </div>
+                        </div>
+                        <div class="badge">2 År</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Samarbeid med servitører for rask og effektiv servering. Sørget for god hygiene og renhold i tråd med Mattilsynets krav. Håndterte også servitøroppgaver - tok imot bestillinger, gjestebehandling og sørget for god service.</p>
+                        <div class="achievements">
+                            <h4>Hovedoppgaver:</h4>
+                            <ul>
+                                <li><i data-lucide="award"></i> Effektiv samarbeid med servitører</li>
+                                <li><i data-lucide="award"></i> Hygiene og renhold etter Mattilsynets krav</li>
+                                <li><i data-lucide="award"></i> Bestillingsmottak og gjestebehandling</li>
+                            </ul>
+                        </div>
+                        <div class="skills">
+                            <span class="skill-tag">Kokk</span>
+                            <span class="skill-tag">Servitør</span>
+                            <span class="skill-tag">Hygiene</span>
+                            <span class="skill-tag">Teamarbeid</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kosu Bakeriet -->
+                <div class="card experience-card">
+                    <div class="card-header">
+                        <div class="job-info">
+                            <h3 class="job-title">Baker/Servitør</h3>
+                            <p class="company">Kosu Bakeriet</p>
+                            <div class="job-date">
+                                <i data-lucide="calendar"></i>
+                                2021 - 2022
+                            </div>
+                        </div>
+                        <div class="badge">1 År</div>
+                    </div>
+                    <div class="card-content">
+                        <p>Effektiv ordrebehandling og kundeservice. Bidro til høy kundetilfredshet og gjentatte besøk. Lærte verdien av punktlighet, hygiene og ansvarlighet.</p>
+                        <div class="achievements">
+                            <h4>Oppnådde ferdigheter:</h4>
+                            <ul>
+                                <li><i data-lucide="award"></i> Høy kundetilfredshet</li>
+                                <li><i data-lucide="award"></i> Punktlighet og ansvarlighet</li>
+                                <li><i data-lucide="award"></i> Effektiv ordrebehandling</li>
+                            </ul>
+                        </div>
+                        <div class="skills">
+                            <span class="skill-tag">Baker</span>
+                            <span class="skill-tag">Servitør</span>
+                            <span class="skill-tag">Kundeservice</span>
+                            <span class="skill-tag">Ordrebehandling</span>
+                        </div>
+                    </div>
+                </div>
+
+               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="languages"></i>
+                    Språkferdigheter
+                </div>
+                <h2 class="section-title">Mine Språk</h2>
+                <p class="section-description">Flerspråklig kommunikasjon for bedre samarbeid</p>
+            </div>
+            
+            <div class="languages-grid">
+                <div class="card language-card">
+                    <div class="language-icon">NO</div>
+                    <h3>Norsk</h3>
+                    <p>Flytende</p>
+                    <div class="language-level">70%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                    <span class="level-text">Godt nivå</span>
+                </div>
+                
+                <div class="card language-card">
+                    <div class="language-icon">TR</div>
+                    <h3>Tyrkisk</h3>
+                    <p>Morsmål</p>
+                    <div class="language-level">100%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 70%"></div>
+                    </div>
+                    <span class="level-text">Morsmål</span>
+                </div>
+                
+                <div class="card language-card">
+                    <div class="language-icon">EN</div>
+                    <h3>Engelsk</h3>
+                    <p>Avansert nivå</p>
+                    <div class="language-level">70%</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                    <span class="level-text">Godt nivå</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="graduation-cap"></i>
+                    Utdanning
+                </div>
+                <h2 class="section-title">Min Utdanning</h2>
+                <p class="section-description">Teknisk utdanning med fokus på praktiske ferdigheter</p>
+            </div>
+            
+            <div class="card education-card">
+                <div class="card-header">
+                    <div class="job-info">
+                        <h3 class="job-title">Elektro og datateknologi</h3>
+                        <p class="company">Hamar Katedralskole</p>
+                        <div class="job-date">
+                            <i data-lucide="calendar"></i>
+                            2024 - Pågående
+                        </div>
+                    </div>
+                    <div class="badge badge-active">Aktiv</div>
+                </div>
+                <div class="card-content">
+                    <p>Faglig fokus på teknisk innsikt, sikkerhet og praktiske ferdigheter. Lærer om elektriske systemer, datateknologi og moderne tekniske løsninger.</p>
+                    <div class="achievements">
+                        <h4>Fagområder:</h4>
+                        <div class="skills">
+                            <span class="skill-tag">Elektroteknikk</span>
+                            <span class="skill-tag">Datateknologi</span>
+                            <span class="skill-tag">Sikkerhet</span>
+                            <span class="skill-tag">Praktiske ferdigheter</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-bg"></div>
+        <div class="floating-elements">
+            <div class="float-element float-4"></div>
+            <div class="float-element float-5"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="mail"></i>
+                    Kontakt
+                </div>
+                <h2 class="section-title">La Oss Samarbeide</h2>
+                <p class="section-description">Jeg er alltid åpen for nye muligheter og læring. Kontakt meg gjerne for utplasering, deltidsjobb eller heltidsjobb!</p>
+            </div>
+            
+            <div class="contact-buttons">
+                <button class="btn btn-primary">
+                     <a href="mailto:bedirhankaraboga9@gmail.com" class="btn btn-outline">
+        <i data-lucide="mail"></i>
+                    <i data-lucide="mail"></i>
+                    Ta Kontakt
+                </button>
+                <button class="btn btn-outline" onclick="downloadCV()">
+                    <i data-lucide="download"></i>
+                    Last ned CV
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+  
+                <p class="footer-text">© 2025 Bedir. Alle rettigheter reservert. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
